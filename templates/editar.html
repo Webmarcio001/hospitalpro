@@ -1,1 +1,8 @@
-
+{% extends "base.html" %}
+{% block content %}
+<form method="post">
+<input name="nome" value="{{paciente.nome}}" class="form-control"><br>
+<input name="cpf" value="{{paciente.cpf}}" class="form-control"><br>
+<button class="btn btn-warning">Atualizar</button>
+</form>
+{% endblock %}
